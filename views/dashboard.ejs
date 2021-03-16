@@ -1,0 +1,54 @@
+<html>
+
+<head>
+  <title>✨ Dashboard</title>
+
+  <!-- Materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/stylesheets/global.css" />
+</head>
+
+<body>
+  <input type="hidden" name="id" value="<%=id %>" />
+  <%- include ("./partials/header") %>
+
+  <!-- NAV BAR-->
+  <b>
+    <div style="background-color: var(--accent1)">
+      <div class="container" style="text-align: center;">
+        <div class="row">
+          <div class="col s4" style="padding: 10px;">
+            <a href="/dashboard/" class="waves-effect waves-teal btn-flat">HOME</a>
+          </div>
+          <div class="col s4" style="padding: 10px;">
+            <a href="/dashboard/new" class="waves-effect waves-teal btn-flat">LIVE COUNTER</a>
+          </div>
+          <!-- <div class="col s3" style="padding: 10px;">
+            <a href="/dashboard/show?id=<%=id%>" class="waves-effect waves-teal btn-flat">PAST REPORTS</a>
+          </div> -->
+          <div class="col s4" style="padding: 10px;">
+            <a href="/dashboard/advice" class="waves-effect waves-teal btn-flat">DIET PLAN</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </b>
+
+  <!-- NOTICE BOARD -->
+  <div class="container example" style="
+        height: 60vh;
+        overflow: scroll;
+        background-color: var(--secondary);
+        padding: 0 30px;
+      ">
+    <h3>About</h3>
+    <h1>write some stuffs and at the bottom video gallery</h1>
+    
+
+  <%- include ("./partials/footer") %>
+</body>
+
+</html>
